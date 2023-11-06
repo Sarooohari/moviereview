@@ -1,0 +1,105 @@
+/* styles.css */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background-video.mp4') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: #1c1c1c;
+    color: #ff9900;
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff9900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #ff9900;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 36px;
+    cursor: pointer;
+    color: #ff9900;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.star-rating label:before {
+    content: "\2605";
+    color: #999;
+}
+
+.star-rating input:checked ~ label {
+    color: #f7d700;
+    transform: scale(1.2);
+}
+
+.user-review {
+    margin-top: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff9900;
+    border-radius: 10px;
+    resize: none;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
